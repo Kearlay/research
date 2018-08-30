@@ -23,7 +23,8 @@ from mne import pick_types
 from mne.io import read_raw_edf
 
 # Modules
-import eeg_import, eeg_preprocessing
+from eeg_import import get_data
+from eeg_preprocessing import prepare_data
 
 #%%
 
