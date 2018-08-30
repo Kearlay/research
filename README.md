@@ -1,5 +1,3 @@
-For fNIRS and EEG research at Columbia
-
 # Reference
 
 For the convenience of reading, I collected some basic and important papers about EEG processing.
