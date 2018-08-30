@@ -12,3 +12,7 @@ This contains useful preprocessing steps to implement spatio-temporal pattern re
 # eeg_data_downloads.py
 
 Executing this code will generate folders and start downloading PhysioNet data into them.
+
+# eeg.ipython
+
+Jupyter notebook style
