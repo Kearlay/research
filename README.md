@@ -1,5 +1,6 @@
-# research
-For fNIRS and EEG research at Columbia
+# Reference
+
+For the convenience of reading, I collected some basic and important papers about EEG processing.
 
 # eeg_main.py
 
@@ -8,6 +9,10 @@ Keras implementation of Zhang et al(2018), "EEG-based Intention Recognition from
 # eeg_preprocessing.py
 
 This contains useful preprocessing steps to implement spatio-temporal pattern recognition on raw eeg data. Based on Scikit-learn and MNE pacakges.
+
+# eeg_import.py
+
+Functions defined to extract data from .edf file format using MNE package.
 
 # eeg_data_downloads.py
 
