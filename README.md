@@ -2,8 +2,8 @@
 Brain Signal Anaylsis Projects
 ==========
 
-This repository contains groups of scripts written or forked as a benchmark for 
-the state-of-the-art computer vision application. Collaborated with researchers at Columbia University Medical Center.
+This repository contains groups of scripts written as a part of EEG classification research for 
+the state-of-the-art deep learning application. Collaborated with researchers at Columbia University Medical Center.
 
 Overview
 --------
