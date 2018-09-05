@@ -16,21 +16,21 @@ Acamdemic Reference
 
 directory | title                                               |  author                             |        year
 --------|-------------------------------------------------------|-------------------------------------|-----------------
-BCI4 | Filter Bank Common Spatial Pattern (FBCSP) in Brain-Computer Interface | Kai Keng Ang, et al. | 2008
-BCI4 | Filter bank common spatial pattern algorithm on BCI competition IV Datasets 2a and 2b | Kai Keng Ang, et al.               | 2012
-BCI4 | Feature Selection for Motor Imagery EEG Classification Based on Firefly Algorithm and Learning Automata | Aiming Liu, et al. | 2017
-deepLearning  | Learning Representations from EEG with Deep Recurrent-Convolutional Neural Networks | Pouya Bashivan, et al. | 2016
-deepLearning  | EEG-Based Emotion Recognition Using Deep Learning Network with Principal Component Based Covariate Shift Adaptation | Suwicha Jirayucharoensak, et al. | 2014
-deepLearning  | A Deep Learning Architecture for Temporal Sleep Stage Classification Using Multivariate and Multimodal Time Series | Stanislas Chambon, et al. | 2018
-deepLearning  | Deep Learning With Convolutional Neural Networks for EEG Decoding and Visualization |Robin T. Schirrmeister, et al.   | 2017
-deepLearning     | EEG-based Intention Recognition from Spatio-Temporal Representations via Cascade and Parallel Convolutional Recurrent Neural Networks | Dalin Zhang, et al. | 2018
-deepLearning | A Deep Learning Method for Classification of EEG Data Based on Motor Imagery | Xiu An, et al. | 2014
-emotionState | Classifying Different Emotional States by Means of EEG- Based Functional Connectivity Patterns | You-Yun Lee, Shulan Hsieh | 2014
-emotionState | Emotion Classification Based on Gamma-band EEG | Mu Li, Bao-Liang Lu | 2009
-preprocessing | Time-series discrimination using feature relevance analysis in motor imagery classification | A.M. Alvarez-Meza, et al. | 2014
-preprocessing | Comparison of signal decomposition methods in classification of EEG signals for motor-imagery BCI system              | Jasmin Kevric, et al. | 2015
-preprocessing | Classification of EEG Motor imagery multi class signals based on Cross Correlation | D.Hari Krishna, et al.                | 2016
-preprocessing | EEG Signal Processing Techniques For Mental Task Classification | Rajveer Shastri, et al. | 2015
+BCI4 | *Filter Bank Common Spatial Pattern (FBCSP) in Brain-Computer Interface* | Kai Keng Ang, et al. | 2008
+BCI4 | *Filter bank common spatial pattern algorithm on BCI competition IV Datasets 2a and 2b* | Kai Keng Ang, et al.               | 2012
+BCI4 | *Feature Selection for Motor Imagery EEG Classification Based on Firefly Algorithm and Learning Automata* | Aiming Liu, et al. | 2017
+deepLearning  | *Learning Representations from EEG with Deep Recurrent-Convolutional Neural Networks* | Pouya Bashivan, et al. | 2016
+deepLearning  | *EEG-Based Emotion Recognition Using Deep Learning Network with Principal Component Based Covariate Shift Adaptation* | Suwicha Jirayucharoensak, et al. | 2014
+deepLearning  | *A Deep Learning Architecture for Temporal Sleep Stage Classification Using Multivariate and Multimodal Time Series* | Stanislas Chambon, et al. | 2018
+deepLearning  | *Deep Learning With Convolutional Neural Networks for EEG Decoding and Visualization* |Robin T. Schirrmeister, et al.   | 2017
+deepLearning     | *EEG-based Intention Recognition from Spatio-Temporal Representations via Cascade and Parallel Convolutional Recurrent Neural Networks* | Dalin Zhang, et al. | 2018
+deepLearning | *A Deep Learning Method for Classification of EEG Data Based on Motor Imagery* | Xiu An, et al. | 2014
+emotionState | *Classifying Different Emotional States by Means of EEG- Based Functional Connectivity Patterns* | You-Yun Lee, Shulan Hsieh | 2014
+emotionState | *Emotion Classification Based on Gamma-band EEG* | Mu Li, Bao-Liang Lu | 2009
+preprocessing | *Time-series discrimination using feature relevance analysis in motor imagery classification* | A.M. Alvarez-Meza, et al. | 2014
+preprocessing | *Comparison of signal decomposition methods in classification of EEG signals for motor-imagery BCI system*              | Jasmin Kevric, et al. | 2015
+preprocessing | *Classification of EEG Motor imagery multi class signals based on Cross Correlation* | D.Hari Krishna, et al.                | 2016
+preprocessing | *EEG Signal Processing Techniques For Mental Task Classification* | Rajveer Shastri, et al. | 2015
 
 
 
