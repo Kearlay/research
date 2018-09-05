@@ -51,7 +51,7 @@ Python scripts files:
 filename                          |  description
 ----------------------------------|------------------------------------------------------------------------------------
 eeg_main.py                       | Import EEG data from data files and start training neural networks
-eeg.ipython                       | Jupyter version. Please refer to this notebook for a quick look
+eeg_jupyter.ipython                       | Jupyter version. Please refer to this notebook for a quick look
 
 Python modules:
 
