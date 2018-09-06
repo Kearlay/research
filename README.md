@@ -39,6 +39,7 @@ Description of files
 
 - All code is written in python3
 - Dependencies include MNE (EEG handling package), Keras, requests, urllib3
+- Python scripts are adjusted to be run on HPC
 
 Non-Python files:
 
@@ -51,7 +52,7 @@ Python scripts files:
 filename                          |  description
 ----------------------------------|------------------------------------------------------------------------------------
 eeg_main.py                       | Import EEG data from data files and start training neural networks
-eeg_jupyter.ipython                       | Jupyter version. Please refer to this notebook for a quick look
+eeg_jupyter.ipynb                       | Jupyter version. Please refer to this notebook for a quick look
 
 Python modules:
 
