@@ -39,6 +39,7 @@ Description of files
 
 - All code is written in python3
 - Dependencies include MNE (EEG handling package), Keras, requests, urllib3
+- Python scripts are adjusted to be run on HPC
 
 Non-Python files:
 
