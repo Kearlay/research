@@ -8,7 +8,7 @@ the state-of-the-art deep learning application. Collaborated with researchers at
 Overview
 --------
 
-TensorFlow API, Keras implementation of Zhang et al(2018), "EEG-based Intention Recognition from Spatio-Temporal Representations via Cascade and Parallel Convolutional Recurrent Neural Networks" for EEG motar imagery classification on PhysioNet data (https://www.physionet.org/pn4/eegmmidb/). Stacked CNN and RNN were applied on time-distributed sliding windows of raw EEG data.
+TensorFlow and Keras implementation of Zhang et al(2018), "EEG-based Intention Recognition from Spatio-Temporal Representations via Cascade and Parallel Convolutional Recurrent Neural Networks" for EEG motar imagery classification on PhysioNet data (https://www.physionet.org/pn4/eegmmidb/). Stacked CNN and RNN were applied on time-distributed sliding windows of raw EEG data.
 
 
 Acamdemic Reference
@@ -52,7 +52,8 @@ Python scripts files:
 filename                          |  description
 ----------------------------------|------------------------------------------------------------------------------------
 eeg_main.py                       | Import EEG data from data files and start training neural networks
-eeg_jupyter.ipynb                       | Jupyter version. Please refer to this notebook for a quick look
+eeg_jupyter.ipynb                 | Keras version. Please refer to this notebook for a quick look
+eeg_tensorflow.ipynb              | TensorFlow Eager API version. Please refer to this notebook for a quick look
 
 Python modules:
 
