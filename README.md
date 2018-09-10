@@ -47,17 +47,17 @@ filename                          |  description
 ----------------------------------|------------------------------------------------------------------------------------
 README.md                         |  Text file (markdown format) description of the project.
 
-Python scripts files:
+Python Scripts:
 
 filename                          |  description
 ----------------------------------|------------------------------------------------------------------------------------
-eeg_main.py                       | Import EEG data from data files and start training neural networks
+eeg_main.py                       | Import EEG data from data files and start training the graph (added for HPC clusters)
 eeg_tensorflow.ipynb              | TensorFlow and Keras implementation. Please refer to this notebook for a quick look
 
-Python modules:
+Python Modules:
 
 filename                          |  description
 ----------------------------------|------------------------------------------------------------------------------------
-eeg_preprocessing.py              |  This contains useful preprocessing steps to implement spatio-temporal pattern recognition on raw eeg data. Based on Scikit-learn and MNE pacakges.
-eeg_import.py                     |  Functions defined to extract data from .edf file format using MNE package.
-eeg_data_downloads.py             |  Executing this code will generate folders and start downloading PhysioNet data into them.
+eeg_preprocessing.py              | This contains useful preprocessing steps to implement spatio-temporal pattern recognition on raw eeg data. Based on Scikit-learn and MNE pacakges.
+eeg_import.py                     | Functions defined to extract data from .edf file format using MNE package.
+eeg_data_downloads.py             | Executing this code will generate folders and start downloading PhysioNet data into them.
