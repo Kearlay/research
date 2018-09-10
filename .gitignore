@@ -1,2 +1,5 @@
 # IPython notebook checkpoints
 .ipynb_checkpoints
+
+# Python Cache
+.pyc
