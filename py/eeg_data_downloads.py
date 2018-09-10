@@ -1,8 +1,15 @@
+import re
+import requests
+import pathlib
+import urllib
+import os
+
+#%%
 CONTEXT = 'pn4/'
 MATERIAL = 'eegmmidb/'
 URL = 'https://www.physionet.org/' + CONTEXT + MATERIAL
 
-USERDIR = '/Users/Jimmy/data/PhysioNet/' # Change this directory according to your setting
+USERDIR = './data/' # Change this directory according to your setting
 
 page = requests.get(URL).text
 FOLDERS = sorted(list(set(re.findall(r'S[0-9]+', page))))

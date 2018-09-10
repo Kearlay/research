@@ -1,5 +1,25 @@
-def get_data(subj_num, epoch_sec=0.0625):
-    """ Import each subject`s trials and make a 3D array
+# Get Paths
+from glob import glob
+
+# EEG package
+from mne import  pick_types
+from mne.io import read_raw_edf
+
+import os
+import numpy as np
+
+#%%
+# Get file paths
+PATH = '/Users/jimmy/data/PhysioNet/'
+SUBS = glob(PATH + 'S[0-9]*')
+FNAMES = sorted([x[-4:] for x in SUBS])
+
+# Remove subject #89 with damaged data
+FNAMES.remove('S089')
+
+def get_data(subj_num=FNAMES, epoch_sec=0.0625):
+    """ Import from edf files data and targets in the shape of 3D tensor
+    
         Output shape: (Trial*Channel*TimeFrames)
         
         Some edf+ files recorded at low sampling rate, 128Hz, are excluded. 
@@ -8,6 +28,11 @@ def get_data(subj_num, epoch_sec=0.0625):
         epoch_sec: time interval for one segment of mashes
         """
     
+    # Event codes mean different actions for two groups of runs
+    run_type_0 = '02'.split(',')
+    run_type_1 = '04,08,12'.split(',')
+    run_type_2 = '06,10,14'.split(',')
+
     # To calculated completion rate
     count = 0
     
@@ -22,11 +47,15 @@ def get_data(subj_num, epoch_sec=0.0625):
     
     # Sub-function to assign X and X, y
     def append_X(n_segments, old_x):
+        '''This function generate a tensor for X and append it to the existing X'''
         new_x = old_x + [data[:, int(sfreq*sliding*n):int(sfreq*sliding*(n+2))] for n in range(n_segments)\
                      if data[:, int(sfreq*sliding*n):int(sfreq*sliding*(n+2))].shape==(nChan, int(sfreq*epoch_sec))]
         return new_x
     
     def append_X_Y(run_type, event, old_x, old_y):
+        '''This function seperate the type of events 
+        (refer to the data descriptitons for the list of the types)
+        Then assign X and Y according to the event types'''
         # Number of sliding windows
         n_segments = int(event[1]/epoch_sec)*2-1
         
@@ -59,7 +88,8 @@ def get_data(subj_num, epoch_sec=0.0625):
     for subj in subj_num:
         # Return completion rate
         count+=1
-        print('working on {}, {:.1%} completed'.format(subj, count/len(subj_num)))
+        if len(subj_num)//count == 10:
+            print('working on {}, {:.1%} completed'.format(subj, count/len(subj_num)))
 
         # Get file names
         fnames = glob(os.path.join(PATH, subj, subj+'R*.edf'))
@@ -74,6 +104,9 @@ def get_data(subj_num, epoch_sec=0.0625):
             if raw.info['sfreq'] != 160:
                 print(f'{subj} is sampled at 128Hz so will be excluded.')
                 break
+            
+            # High-pass filtering
+            raw.filter(l_freq=1, h_freq=None, picks=picks)
             
             # Get annotation
             events = raw.find_edf_events()

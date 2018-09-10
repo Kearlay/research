@@ -1,3 +1,7 @@
+import numpy as np
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+
+#%%
 def convert_mesh(X):
     
     mesh = np.zeros((X.shape[0], X.shape[2], 10, 11))
@@ -41,7 +45,7 @@ def convert_mesh(X):
     
     return mesh
 
-
+#%%
 def prepare_data(X, y, test_ratio=0.2, return_mesh=True, set_seed=42):
     
     # y encoding
