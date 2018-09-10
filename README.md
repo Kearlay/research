@@ -52,8 +52,7 @@ Python scripts files:
 filename                          |  description
 ----------------------------------|------------------------------------------------------------------------------------
 eeg_main.py                       | Import EEG data from data files and start training neural networks
-eeg_jupyter.ipynb                 | Keras version. Please refer to this notebook for a quick look
-eeg_tensorflow.ipynb              | TensorFlow Eager API version. Please refer to this notebook for a quick look
+eeg_tensorflow.ipynb              | TensorFlow and Keras implementation. Please refer to this notebook for a quick look
 
 Python modules:
 
