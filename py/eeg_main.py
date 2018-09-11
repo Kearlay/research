@@ -1,7 +1,7 @@
 # Modeling & Preprocessing
 from keras.layers import Conv2D, BatchNormalization, Activation, Flatten, Dense, Dropout, LSTM, Input, TimeDistributed
 from keras import initializers, Model, optimizers, callbacks
-from keras.utils.training_utils import multi_gpu_model
+#from keras.utils.training_utils import multi_gpu_model
 
 # Essential Data Handling
 import numpy as np
@@ -11,7 +11,7 @@ from eeg_import import get_data, FNAMES
 from eeg_preprocessing import prepare_data
 
 #%%
-X,y = get_data(FNAMES[:2], epoch_sec=0.0625)
+X,y = get_data(FNAMES[:5], epoch_sec=0.0625)
 
 print(X.shape)
 print(y.shape)
@@ -76,6 +76,7 @@ model = Model(inputs=inputs, outputs=outputs)
 model.summary()
 
 #%%
+'''
 # Load a model to transfer pre-trained parameters
 trans_model = model.load('CNN_3blocks.h5')
 
@@ -91,14 +92,15 @@ for layer in which_layer:
     
 for layer in model.layers[:9]: # Freeze the first 9 layers(CNN block)
     layer.trainable = False
-    
+
 # Turn on multi-GPU mode
 model = multi_gpu_model(model, gpus=4)
-
+'''
+#%%
 callbacks_list = [callbacks.ModelCheckpoint('model.h5', save_best_only=True, monitor='val_loss'),
                  callbacks.EarlyStopping(monitor='acc', patience=3),
-                 callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=5),
-                 callbacks.TensorBoard(log_dir='./my_log_dir/', histogram=1)]
+                 callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=5)]
+                 #,callbacks.TensorBoard(log_dir='./my_log_dir/', histogram=1)]
 
 # Start training
 model.compile(loss='categorical_crossentropy', optimizer=optimizers.adam(lr=0.001), metrics=['acc'])
