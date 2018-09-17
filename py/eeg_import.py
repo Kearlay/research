@@ -1,3 +1,13 @@
+'''
+Name: eeg_import.py
+Author: Jim Chung
+Dependencies: glob, mne, os, numpy
+Description: This script is a module for eeg_main.py.
+ The contained function `get_data` loads PhysioNet brain signals in '.edf' format.
+ Please be aware of the dependencies. MNE package can be downloaded via pip command.
+'''
+
+
 # Get Paths
 from glob import glob
 
@@ -85,10 +95,10 @@ def get_data(subj_num=FNAMES, epoch_sec=0.0625):
         return new_x, new_y
     
     # Iterate over subj_num: S001, S002, S003...
-    for subj in subj_num:
+    for i, subj in enumerate(subj_num):
         # Return completion rate
         count+=1
-        if len(subj_num)//count == 10:
+        if i%(len(subj_num)/10) == 0:
             print('working on {}, {:.1%} completed'.format(subj, count/len(subj_num)))
 
         # Get file names

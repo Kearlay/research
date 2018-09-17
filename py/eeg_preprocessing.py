@@ -1,3 +1,16 @@
+'''
+Name: eeg_preprocessing.py
+Author: Jim Chung
+Dependencies: numpy, sklearn
+Description: This script is a module for eeg_main.py.
+ The contained function, 'prepare_data', takes arguments from imported
+ PysioNet brain signals in the '.edf' format. After normalization and shuffling,
+ the function will generate 2D meshes from each 1D sample.
+ This enables following ANN architectures to learn the spaitial pattern of the data.
+'''
+
+
+
 import numpy as np
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 

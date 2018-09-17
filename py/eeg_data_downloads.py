@@ -1,3 +1,15 @@
+'''
+Name: eeg_data_downloads.py
+Author: Jim Chung
+Dependencies: re, request, pathlib, urllib, os
+Description: Executing this script will generate folders and start downloading
+ PhysioNet motor imagery data. Please refer to the official descriptions for
+ the dataset. Labels and recording protocols were elaborated on the website.
+ https://www.physionet.org/pn4/eegmmidb/
+
+'''
+
+
 import re
 import requests
 import pathlib

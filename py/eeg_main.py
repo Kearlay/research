@@ -1,7 +1,10 @@
 # Modeling & Preprocessing
 from keras.layers import Conv2D, BatchNormalization, Activation, Flatten, Dense, Dropout, LSTM, Input, TimeDistributed
 from keras import initializers, Model, optimizers, callbacks
+from keras.models import load_model
 #from keras.utils.training_utils import multi_gpu_model
+
+from glob import glob
 
 # Essential Data Handling
 import numpy as np
@@ -10,19 +13,29 @@ import numpy as np
 from eeg_import import get_data, FNAMES
 from eeg_preprocessing import prepare_data
 
-#%%
-X,y = get_data(FNAMES[:5], epoch_sec=0.0625)
+# Save the model
+import pickle
 
-print(X.shape)
+# Make directories for model binaries
+import os
+DIR = ['./model', './history']
+for directory in DIR:
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+
+#%%
+X,y = get_data(FNAMES, epoch_sec=0.0625)
+
+print(X.shapei)
 print(y.shape)
 
 #%%
 
 X_train, y_train, X_test, y_test = prepare_data(X, y)
 
-# Check out the shape of the mesh
-np.set_printoptions(precision=2, linewidth=100)
-X_train[1][0]
+del X
+del y
 #%%
 
 # Make another dimension, 1, to apply CNN for each time frame.
@@ -75,33 +88,38 @@ outputs = Dense(5, activation='softmax')(h)
 model = Model(inputs=inputs, outputs=outputs)
 model.summary()
 
-#%%
-'''
-# Load a model to transfer pre-trained parameters
-trans_model = model.load('CNN_3blocks.h5')
-
-# Transfer learning - parameter copy & paste
-which_layer = 'CNN1,CNN2,CNN3,batch1,batch2,batch3'.split(',')
-layer_names = [layer.name for layer in model.layers]
-trans_layer_names = [layer.name for layer in trans_model.layers]
-
-for layer in which_layer:
-    ind = layer_names.index(layer)
-    trans_ind = trans_layer_names.index(layer)
-    model.layers[ind].set_weights(trans_model.layers[trans_ind].get_weights())
+# Get past models
+MODEL_LIST = glob('./model/*')
+if MODEL_LIST:
+    print('A model that already exists detected and loaded.')
+    model = load_model(MODEL_LIST[-1])
     
-for layer in model.layers[:9]: # Freeze the first 9 layers(CNN block)
-    layer.trainable = False
-
-# Turn on multi-GPU mode
-model = multi_gpu_model(model, gpus=4)
-'''
-#%%
-callbacks_list = [callbacks.ModelCheckpoint('model.h5', save_best_only=True, monitor='val_loss'),
-                 callbacks.EarlyStopping(monitor='acc', patience=3),
-                 callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=5)]
-                 #,callbacks.TensorBoard(log_dir='./my_log_dir/', histogram=1)]
+callbacks_list = [callbacks.ModelCheckpoint('./model/model' + str(len(MODEL_LIST)) + '.h5', 
+                                            save_best_only=True, 
+                                            monitor='val_loss'),
+                 callbacks.EarlyStopping(monitor='acc', patience=10),
+                 callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=5),
+                 callbacks.TensorBoard(log_dir='./my_log_dir', 
+                                       histogram_freq=0, 
+                                       write_graph=True,
+                                       write_images=True)]
 
 # Start training
 model.compile(loss='categorical_crossentropy', optimizer=optimizers.adam(lr=0.001), metrics=['acc'])
-model.fit(X_train, y_train, batch_size=64, epochs=5000, validation_data=(X_test, y_test))
+hist = model.fit(X_train, y_train, batch_size=64, epochs=5000, 
+                callbacks=callbacks_list, validation_data=(X_test, y_test))
+
+# Save the history
+hist_list = glob('./history/*')
+count = len(hist_list)
+FILE_NAME = './history/history' + str(count) +'.pkl'
+
+with open(FILE_NAME, 'wb') as object:
+    pickle.dump(hist.history, object)
+    
+# This is how to load the history
+'''
+with open('./history/history2.pkl', 'rb') as ob:
+    data = pickle.load(ob)
+print(data)
+'''
