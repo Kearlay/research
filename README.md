@@ -3,7 +3,7 @@ Brain Signal Anaylsis Projects
 ==========
 
 This repository contains groups of scripts written as a part of EEG classification research for 
-the state-of-the-art deep learning application. Collaborated with researchers at Columbia University Medical Center.
+the state-of-the-art deep learning application.
 
 Overview
 --------
@@ -13,7 +13,7 @@ TensorFlow and Keras implementation of Zhang et al(2018), "EEG-based Intention R
 
 Acamdemic Reference
 ------------
-
+Collaborated
 directory | title                                               |  author                             |        year
 --------|-------------------------------------------------------|-------------------------------------|-----------------
 BCI4 | *Filter Bank Common Spatial Pattern (FBCSP) in Brain-Computer Interface* | Kai Keng Ang, et al. | 2008
