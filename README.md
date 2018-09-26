@@ -63,3 +63,4 @@ eeg_import.py                     | Functions defined to extract data from .edf 
 eeg_data_downloads.py             | Executing this code will generate folders and start downloading PhysioNet data into them.
 eeg_eval.py                       | Evaluation of the model based on the history file. - calls the confusion matrix, loss, and accuracy.
 eeg_prepare.py                    | Preprocess the imported EEG data. 
+gpu_training.sh                   | Send the eeg_main.py script to the computational nodes. Enter 'sbatch gpu_trainin.sh' on Habanero HPC.
