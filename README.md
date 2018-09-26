@@ -54,7 +54,7 @@ filename                          |  description
 eeg_main.py                       | Import EEG data from data files and start training the graph (added for HPC clusters)
 eeg_tensorflow.ipynb              | TensorFlow and Keras implementation. Please refer to this notebook for a quick look
 
-Python Modules:
+Python Modules (HPC version):
 
 filename                          |  description
 ----------------------------------|------------------------------------------------------------------------------------
