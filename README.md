@@ -61,3 +61,5 @@ filename                          |  description
 eeg_preprocessing.py              | This contains useful preprocessing steps to implement spatio-temporal pattern recognition on raw eeg data. Based on Scikit-learn and MNE pacakges.
 eeg_import.py                     | Functions defined to extract data from .edf file format using MNE package.
 eeg_data_downloads.py             | Executing this code will generate folders and start downloading PhysioNet data into them.
+eeg_eval.py                       | Evaluation of the model based on the history file. - calls the confusion matrix, loss, and accuracy.
+eeg_prepare.py                    | Preprocess the imported EEG data. 
