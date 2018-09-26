@@ -5,9 +5,8 @@ Brain Signal Anaylsis Projects
 This repository contains groups of scripts written as a part of EEG classification research for 
 the state-of-the-art deep learning application.
 
-## Columbia Data Science Institute (DSI) Conference
-### This is a seperate project. Our lab is planning finalize the paper soon. Its source code will be updated after the paper is published.
-
+### Columbia Data Science Institute (DSI) Conference
+ This is a seperate project. Our lab is planning finalize the paper soon. Its source code will be updated after the paper is published.<br>
 ![Poster](https://github.com/Kearlay/research/blob/master/conference0928.png?raw=true)
 
 Overview
