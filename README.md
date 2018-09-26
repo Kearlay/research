@@ -12,7 +12,7 @@ TensorFlow and Keras implementation of Zhang et al(2018), "EEG-based Intention R
 
 ### Columbia Data Science Institute (DSI) Conference
 
-![Poster](https://github.com/Kearlay/research/blob/master/conference0928.pdf?raw=true)
+![Poster](https://github.com/Kearlay/research/blob/master/conference0928.png?raw=true)
 
 
 Acamdemic Reference
