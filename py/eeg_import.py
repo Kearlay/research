@@ -1,13 +1,3 @@
-'''
-Name: eeg_import.py
-Author: Jim Chung
-Dependencies: glob, mne, os, numpy
-Description: This script is a module for eeg_main.py.
- The contained function `get_data` loads PhysioNet brain signals in '.edf' format.
- Please be aware of the dependencies. MNE package can be downloaded via pip command.
-'''
-
-
 # Get Paths
 from glob import glob
 
@@ -20,12 +10,15 @@ import numpy as np
 
 #%%
 # Get file paths
-PATH = '/Users/jimmy/data/PhysioNet/'
+PATH = '/Users/jimmy/data/PhysioNet/'#'/rigel/pimri/users/xh2170/data2/data/' #PATH = './data/'
 SUBS = glob(PATH + 'S[0-9]*')
 FNAMES = sorted([x[-4:] for x in SUBS])
 
-# Remove subject #89 with damaged data
-FNAMES.remove('S089')
+try:
+    FNAMES.remove('S089')
+except:
+    pass
+
 
 def get_data(subj_num=FNAMES, epoch_sec=0.0625):
     """ Import from edf files data and targets in the shape of 3D tensor
@@ -98,7 +91,9 @@ def get_data(subj_num=FNAMES, epoch_sec=0.0625):
     for i, subj in enumerate(subj_num):
         # Return completion rate
         count+=1
-        if i%(len(subj_num)/10) == 0:
+        displayStep = max(len(subj_num)//10, 1)
+
+        if i%displayStep == 0:
             print('working on {}, {:.1%} completed'.format(subj, count/len(subj_num)))
 
         # Get file names
@@ -109,18 +104,21 @@ def get_data(subj_num=FNAMES, epoch_sec=0.0625):
             
             # Import data into MNE raw object
             raw = read_raw_edf(fname, preload=True, verbose=False)
+
             picks = pick_types(raw.info, eeg=True)
             
             if raw.info['sfreq'] != 160:
-                print(f'{subj} is sampled at 128Hz so will be excluded.')
+                print('{} is sampled at 128Hz so will be excluded.'.format(subj))
                 break
             
             # High-pass filtering
             raw.filter(l_freq=1, h_freq=None, picks=picks)
             
             # Get annotation
-            events = raw.find_edf_events()
-            
+            try:
+                events = raw.find_edf_events()
+            except:
+                continue
             # Get data
             data = raw.get_data(picks=picks)
             

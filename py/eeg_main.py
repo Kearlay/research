@@ -6,9 +6,6 @@ from keras.models import load_model
 
 from glob import glob
 
-# Essential Data Handling
-import numpy as np
-
 # Modules
 from eeg_import import get_data, FNAMES
 from eeg_preprocessing import prepare_data
@@ -27,7 +24,7 @@ for directory in DIR:
 #%%
 X,y = get_data(FNAMES, epoch_sec=0.0625)
 
-print(X.shapei)
+print(X.shape)
 print(y.shape)
 
 #%%
@@ -89,10 +86,13 @@ model = Model(inputs=inputs, outputs=outputs)
 model.summary()
 
 # Get past models
-MODEL_LIST = glob('./model/*')
+
+MODEL_LIST = []#glob('./model/*')
+'''
 if MODEL_LIST:
     print('A model that already exists detected and loaded.')
     model = load_model(MODEL_LIST[-1])
+'''
     
 callbacks_list = [callbacks.ModelCheckpoint('./model/model' + str(len(MODEL_LIST)) + '.h5', 
                                             save_best_only=True, 
@@ -106,11 +106,11 @@ callbacks_list = [callbacks.ModelCheckpoint('./model/model' + str(len(MODEL_LIST
 
 # Start training
 model.compile(loss='categorical_crossentropy', optimizer=optimizers.adam(lr=0.001), metrics=['acc'])
-hist = model.fit(X_train, y_train, batch_size=64, epochs=5000, 
+hist = model.fit(X_train, y_train, batch_size=64, epochs=3, 
                 callbacks=callbacks_list, validation_data=(X_test, y_test))
 
 # Save the history
-hist_list = glob('./history/*')
+hist_list = []#glob('./history/*')
 count = len(hist_list)
 FILE_NAME = './history/history' + str(count) +'.pkl'
 

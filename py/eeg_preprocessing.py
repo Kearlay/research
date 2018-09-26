@@ -1,16 +1,3 @@
-'''
-Name: eeg_preprocessing.py
-Author: Jim Chung
-Dependencies: numpy, sklearn
-Description: This script is a module for eeg_main.py.
- The contained function, 'prepare_data', takes arguments from imported
- PysioNet brain signals in the '.edf' format. After normalization and shuffling,
- the function will generate 2D meshes from each 1D sample.
- This enables following ANN architectures to learn the spaitial pattern of the data.
-'''
-
-
-
 import numpy as np
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
@@ -82,11 +69,12 @@ def prepare_data(X, y, test_ratio=0.2, return_mesh=True, set_seed=42):
         shape = X.shape
         scaler = StandardScaler()
         scaled_X = np.zeros((shape[0], shape[1], shape[2]))
+        displayStep = max(int(shape[0]/10), 1)
         for i in range(shape[0]):
             for z in range(shape[2]):
                 scaled_X[i, :, z] = np.squeeze(scaler.fit_transform(X[i, :, z].reshape(-1, 1)))
-        if i%int(shape[0]/10) == 0:
-            print('{:.2%} done'.format((i+1)/shape[0]))   
+            if i%displayStep == 0:
+                print('{:.1%} done'.format((i+1)/shape[0]))   
         return scaled_X
             
     X_train, X_test  = scale_data(X_train), scale_data(X_test)
