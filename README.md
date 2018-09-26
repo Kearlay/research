@@ -10,6 +10,9 @@ Overview
 
 TensorFlow and Keras implementation of Zhang et al(2018), "EEG-based Intention Recognition from Spatio-Temporal Representations via Cascade and Parallel Convolutional Recurrent Neural Networks" for EEG motar imagery classification on PhysioNet data (https://www.physionet.org/pn4/eegmmidb/). Stacked CNN and RNN were applied on time-distributed sliding windows of raw EEG data.
 
+### Columbia Data Science Institute (DSI) Conference
+
+
 
 Acamdemic Reference
 ------------
@@ -64,3 +67,5 @@ eeg_data_downloads.py             | Executing this code will generate folders an
 eeg_eval.py                       | Evaluation of the model based on the history file. - calls the confusion matrix, loss, and accuracy.
 eeg_prepare.py                    | Preprocess the imported EEG data. 
 gpu_training.sh                   | Send the eeg_main.py script to the computational nodes. Enter 'sbatch gpu_trainin.sh' on Habanero HPC.
+
+
