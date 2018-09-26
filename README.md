@@ -11,9 +11,8 @@ Overview
 TensorFlow and Keras implementation of Zhang et al(2018), "EEG-based Intention Recognition from Spatio-Temporal Representations via Cascade and Parallel Convolutional Recurrent Neural Networks" for EEG motar imagery classification on PhysioNet data (https://www.physionet.org/pn4/eegmmidb/). Stacked CNN and RNN were applied on time-distributed sliding windows of raw EEG data.
 
 ### Columbia Data Science Institute (DSI) Conference
-
 --------
-[[https://github.com/Kearlay/research/blob/master/conference0928.pptx|alt=octocat]]
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
 
 Acamdemic Reference
