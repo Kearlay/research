@@ -2,15 +2,16 @@
 Brain Signal Anaylsis Projects
 ==========
 
-This repository contains groups of scripts written as a part of EEG classification research for 
+This repository contains groups of scripts written as a part of fNIRS, EEG classification research for 
 the state-of-the-art deep learning application.
 
-## Columbia Data Science Institute (DSI) Conference
+## (1) Columbia Data Science Institute (DSI) Conference
 *"Brain State Classification on Functional Near Infrared Spectroscopy using Convolutional Neural Networks"* <br>Andrew Lee, Jim (Euiyoung) Chung, Xiaofu He
 
  The main project in progress. Our lab is planning finalize the paper soon and the source code will be updated after the paper is published.<br>
 ![Poster](https://github.com/Kearlay/research/blob/master/conference0928.png?raw=true)
 
+## (2) EEG Classification for Motor Imagery Tasks using CNN and LSTM
 Overview
 --------
 
