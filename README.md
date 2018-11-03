@@ -2,17 +2,20 @@
 Brain Signal Anaylsis Projects
 ==========
 
-This repository contains groups of scripts written as a part of EEG classification research for 
+This repository contains groups of scripts written as a part of fNIRS, EEG classification research for 
 the state-of-the-art deep learning application.
 
+## (1) Columbia Data Science Institute (DSI) Conference
+*"Brain State Classification on Functional Near Infrared Spectroscopy using Convolutional Neural Networks"* <br>Andrew Lee, Jim (Euiyoung) Chung, Xiaofu He
+
+ The main project in progress. Our lab is planning finalize the paper soon and the source code will be updated after the paper is published.<br>
+![Poster](https://github.com/Kearlay/research/blob/master/conference0928.png?raw=true)
+
+## (2) EEG Classification for Motor Imagery Tasks using CNN and LSTM
 Overview
 --------
 
 TensorFlow and Keras implementation of Zhang et al(2018), "EEG-based Intention Recognition from Spatio-Temporal Representations via Cascade and Parallel Convolutional Recurrent Neural Networks" for EEG motar imagery classification on PhysioNet data (https://www.physionet.org/pn4/eegmmidb/). Stacked CNN and RNN were applied on time-distributed sliding windows of raw EEG data.
-
-### Columbia Data Science Institute (DSI) Conference
-
-![Poster](https://github.com/Kearlay/research/blob/master/conference0928.pdf?raw=true)
 
 
 Acamdemic Reference
@@ -61,11 +64,10 @@ Python Modules (HPC version):
 
 filename                          |  description
 ----------------------------------|------------------------------------------------------------------------------------
-eeg_preprocessing.py              | This contains useful preprocessing steps to implement spatio-temporal pattern recognition on raw eeg data. Based on Scikit-learn and MNE pacakges.
+eeg_preprocessing.py              | Preprocessing steps to implement spatio-temporal pattern recognition on raw eeg data. Based on Scikit-learn and MNE pacakges.
 eeg_import.py                     | Functions defined to extract data from .edf file format using MNE package.
 eeg_data_downloads.py             | Executing this code will generate folders and start downloading PhysioNet data into them.
 eeg_eval.py                       | Evaluation of the model based on the history file. - calls the confusion matrix, loss, and accuracy.
-eeg_prepare.py                    | Preprocess the imported EEG data. 
 gpu_training.sh                   | Send the eeg_main.py script to the computational nodes. Enter 'sbatch gpu_trainin.sh' on Habanero HPC.
 
 
