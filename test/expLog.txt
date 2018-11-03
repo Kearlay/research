@@ -1,0 +1,11 @@
+The simulator will start within 20s 
+Current Sample#: 0, real label: 2, predicted label: 2, time: 0.0777s 
+Current Sample#: 1, real label: 2, predicted label: 2, time: 0.00302s 
+Current Sample#: 2, real label: 2, predicted label: 2, time: 0.00448s 
+Current Sample#: 3, real label: 2, predicted label: 2, time: 0.00482s 
+Current Sample#: 4, real label: 2, predicted label: 2, time: 0.00471s 
+Current Sample#: 5, real label: 2, predicted label: 1, time: 0.00477s 
+Current Sample#: 6, real label: 1, predicted label: 1, time: 7e-05s 
+....
+
+Model's performance: 0.930555555556

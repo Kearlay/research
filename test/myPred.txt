@@ -1,0 +1,825 @@
+subject S040
+
+testing sample: 0s - 1s
+predicted label: 0 0-56% 3-25% 4-19%
+real label: 2 2-100%
+
+testing sample: 1s - 2s
+predicted label: 0 0-81% 4-19%
+real label: 2 2-100%
+
+testing sample: 2s - 3s
+predicted label: 0 0-100%
+real label: 2 2-100%
+
+testing sample: 3s - 4s
+predicted label: 0 0-88% 4-12%
+real label: 2 2-100%
+
+testing sample: 4s - 5s
+predicted label: 0 0-50% 3-25% 4-25%
+real label: 1 1-94% 2-6%
+
+testing sample: 5s - 6s
+predicted label: 0 0-81% 4-19%
+real label: 1 1-100%
+
+testing sample: 6s - 7s
+predicted label: 0 0-100%
+real label: 1 1-100%
+
+testing sample: 7s - 8s
+predicted label: 0 0-94% 4-6%
+real label: 1 1-100%
+
+testing sample: 8s - 9s
+predicted label: 0 0-44% 3-25% 4-31%
+real label: 1 1-100%
+
+testing sample: 9s - 10s
+predicted label: 0 0-81% 4-19%
+real label: 1 1-100%
+
+testing sample: 10s - 11s
+predicted label: 0 0-100%
+real label: 1 1-100%
+
+testing sample: 11s - 12s
+predicted label: 0 0-100%
+real label: 1 1-100%
+
+testing sample: 12s - 13s
+predicted label: 0 0-44% 3-25% 4-31%
+real label: 2 1-19% 2-81%
+
+testing sample: 13s - 14s
+predicted label: 0 0-81% 4-19%
+real label: 2 2-100%
+
+testing sample: 14s - 15s
+predicted label: 0 0-94% 4-6%
+real label: 2 2-100%
+
+testing sample: 15s - 16s
+predicted label: 0 0-100%
+real label: 2 2-100%
+
+testing sample: 16s - 17s
+predicted label: 0 0-50% 3-25% 4-25%
+real label: 2 2-100%
+
+testing sample: 17s - 18s
+predicted label: 0 0-75% 4-25%
+real label: 2 2-100%
+
+testing sample: 18s - 19s
+predicted label: 0 0-94% 4-6%
+real label: 2 2-100%
+
+testing sample: 19s - 20s
+predicted label: 0 0-100%
+real label: 2 2-100%
+
+testing sample: 20s - 21s
+predicted label: 0 0-50% 3-25% 4-25%
+real label: 1 1-69% 2-31%
+
+testing sample: 21s - 22s
+predicted label: 0 0-75% 4-25%
+real label: 1 1-100%
+
+testing sample: 22s - 23s
+predicted label: 0 0-94% 4-6%
+real label: 1 1-100%
+
+testing sample: 23s - 24s
+predicted label: 0 0-100%
+real label: 1 1-100%
+
+testing sample: 24s - 25s
+predicted label: 0 0-50% 3-25% 4-25%
+real label: 2 1-38% 2-62%
+
+testing sample: 25s - 26s
+predicted label: 0 0-75% 4-25%
+real label: 2 2-100%
+
+testing sample: 26s - 27s
+predicted label: 0 0-94% 4-6%
+real label: 2 2-100%
+
+testing sample: 27s - 28s
+predicted label: 0 0-100%
+real label: 2 2-100%
+
+testing sample: 28s - 29s
+predicted label: 0 0-50% 3-25% 4-25%
+real label: 1 1-56% 2-44%
+
+testing sample: 29s - 30s
+predicted label: 0 0-75% 4-25%
+real label: 1 1-100%
+
+testing sample: 30s - 31s
+predicted label: 0 0-94% 4-6%
+real label: 1 1-100%
+
+testing sample: 31s - 32s
+predicted label: 0 0-100%
+real label: 1 1-100%
+
+testing sample: 32s - 33s
+predicted label: 0 0-50% 3-25% 4-25%
+real label: 1 1-100%
+
+testing sample: 33s - 34s
+predicted label: 0 0-75% 4-25%
+real label: 1 1-100%
+
+testing sample: 34s - 35s
+predicted label: 0 0-94% 4-6%
+real label: 1 1-100%
+
+testing sample: 35s - 36s
+predicted label: 0 0-100%
+real label: 1 1-100%
+
+testing sample: 36s - 37s
+predicted label: 0 0-50% 3-25% 4-25%
+real label: 1 1-56% 2-44%
+
+testing sample: 37s - 38s
+predicted label: 0 0-75% 4-25%
+real label: 2 2-100%
+
+testing sample: 38s - 39s
+predicted label: 0 0-94% 4-6%
+real label: 2 2-100%
+
+testing sample: 39s - 40s
+predicted label: 0 0-100%
+real label: 2 2-100%
+
+testing sample: 40s - 41s
+predicted label: 0 0-56% 3-19% 4-25%
+real label: 2 1-38% 2-62%
+
+testing sample: 41s - 42s
+predicted label: 0 0-69% 3-6% 4-25%
+real label: 1 1-100%
+
+testing sample: 42s - 43s
+predicted label: 0 0-94% 4-6%
+real label: 1 1-100%
+
+testing sample: 43s - 44s
+predicted label: 0 0-100%
+real label: 1 1-100%
+
+testing sample: 44s - 45s
+predicted label: 0 0-62% 3-12% 4-25%
+real label: 1 1-69% 2-31%
+
+testing sample: 45s - 46s
+predicted label: 0 0-69% 3-12% 4-19%
+real label: 2 2-100%
+
+testing sample: 46s - 47s
+predicted label: 0 0-88% 4-12%
+real label: 2 2-100%
+
+testing sample: 47s - 48s
+predicted label: 0 0-100%
+real label: 2 2-100%
+
+testing sample: 48s - 49s
+predicted label: 0 0-62% 3-12% 4-25%
+real label: 2 2-100%
+
+testing sample: 49s - 50s
+predicted label: 0 0-75% 3-12% 4-12%
+real label: 2 2-100%
+
+testing sample: 50s - 51s
+predicted label: 0 0-81% 4-19%
+real label: 2 2-100%
+
+testing sample: 51s - 52s
+predicted label: 0 0-100%
+real label: 2 2-100%
+
+testing sample: 52s - 53s
+predicted label: 0 0-62% 3-12% 4-25%
+real label: 2 1-19% 2-81%subject S002
+
+testing sample: 0s - 1s
+predicted label: 0 0-87% 3-6% 4-6%
+real label: 3 3-100%
+
+testing sample: 1s - 2s
+predicted label: 0 0-90% 3-3% 4-6%
+real label: 3 3-100%
+
+testing sample: 2s - 3s
+predicted label: 0 0-84% 1-3% 3-6% 4-6%
+real label: 4 3-10% 4-90%
+
+testing sample: 3s - 4s
+predicted label: 0 0-94% 3-3% 4-3%
+real label: 4 4-100%
+
+testing sample: 4s - 5s
+predicted label: 0 0-84% 1-3% 3-6% 4-6%
+real label: 3 3-81% 4-19%subject S002
+
+testing sample: 0s - 1s
+predicted label: 0 0-87% 3-6% 4-6%
+real label: 3 3-100%
+
+testing sample: 1s - 2s
+predicted label: 0 0-90% 3-3% 4-6%
+real label: 3 3-100%
+
+testing sample: 2s - 3s
+predicted label: 0 0-84% 1-3% 3-6% 4-6%
+real label: 4 3-10% 4-90%
+
+testing sample: 3s - 4s
+predicted label: 0 0-94% 3-3% 4-3%
+real label: 4 4-100%
+
+testing sample: 4s - 5s
+predicted label: 0 0-84% 1-3% 3-6% 4-6%
+real label: 3 3-81% 4-19%subject S005
+
+testing sample: 0s - 1s
+predicted label: 3 0-23% 2-3% 3-58% 4-16%
+real label: 2 2-100%
+
+testing sample: 1s - 2s
+predicted label: 3 0-39% 2-10% 3-42% 4-10%
+real label: 2 2-100%
+
+testing sample: 2s - 3s
+predicted label: 3 0-16% 2-3% 3-65% 4-16%
+real label: 1 1-90% 2-10%
+
+testing sample: 3s - 4s
+predicted label: 0 0-42% 2-10% 3-39% 4-10%
+real label: 1 1-100%
+
+testing sample: 4s - 5s
+predicted label: 3 0-23% 2-3% 3-61% 4-13%
+real label: 2 1-19% 2-81%subject S011
+
+testing sample: 0s - 3s
+predicted label: 0 0-94% 1-6%
+real label: 1 1-68% 2-32%
+
+testing sample: 3s - 6s
+predicted label: 0 0-94% 1-6%
+real label: 1 1-63% 2-37%subject S012
+
+testing sample: 0s - 1s
+predicted label: 4 0-13% 1-6% 2-6% 3-32% 4-42%
+real label: 4 4-100%
+
+testing sample: 1s - 2s
+predicted label: 4 0-29% 2-3% 3-26% 4-42%
+real label: 4 4-100%
+
+testing sample: 2s - 3s
+predicted label: 4 0-6% 1-6% 2-6% 3-35% 4-45%
+real label: 3 3-90% 4-10%
+
+testing sample: 3s - 4s
+predicted label: 0 0-35% 2-6% 3-23% 4-35%
+real label: 3 3-100%
+
+testing sample: 4s - 5s
+predicted label: 4 0-6% 1-6% 2-6% 3-29% 4-52%
+real label: 4 3-19% 4-81%
+
+testing sample: 5s - 6s
+predicted label: 0 0-35% 2-6% 3-26% 4-32%
+real label: 4 4-100%
+
+testing sample: 6s - 7s
+predicted label: 4 0-3% 1-6% 2-6% 3-32% 4-52%
+real label: 3 3-71% 4-29%subject S013
+
+testing sample: 0s - 1s
+predicted label: 1 1-48% 2-19% 4-32%
+real label: 1 1-100%
+
+testing sample: 1s - 2s
+predicted label: 1 0-16% 1-39% 2-19% 3-13% 4-13%
+real label: 1 1-100%
+
+testing sample: 2s - 3s
+predicted label: 1 1-42% 2-19% 4-39%
+real label: 2 1-10% 2-90%
+
+testing sample: 3s - 4s
+predicted label: 1 0-10% 1-42% 2-19% 3-13% 4-16%
+real label: 2 2-100%
+
+testing sample: 4s - 5s
+predicted label: 1 0-6% 1-42% 2-16% 4-35%
+real label: 1 1-81% 2-19%
+
+testing sample: 5s - 6s
+predicted label: 1 0-6% 1-42% 2-23% 3-10% 4-19%
+real label: 1 1-100%
+
+testing sample: 6s - 7s
+predicted label: 1 0-10% 1-45% 2-16% 3-3% 4-26%
+real label: 2 1-29% 2-71%subject S014
+
+testing sample: 0s - 1s
+predicted label: 0 0-97% 2-3%
+real label: 2 2-100%
+
+testing sample: 1s - 2s
+predicted label: 0 0-74% 2-16% 3-10%
+real label: 2 2-100%
+
+testing sample: 2s - 3s
+predicted label: 0 0-97% 2-3%
+real label: 1 1-90% 2-10%
+
+testing sample: 3s - 4s
+predicted label: 0 0-74% 2-16% 3-10%
+real label: 1 1-100%
+
+testing sample: 4s - 5s
+predicted label: 0 0-97% 2-3%
+real label: 1 1-100%
+
+testing sample: 5s - 6s
+predicted label: 0 0-74% 2-16% 3-10%
+real label: 1 1-100%
+
+testing sample: 6s - 7s
+predicted label: 0 0-97% 2-3%
+real label: 2 1-29% 2-71%subject S014subject S015
+
+testing sample: 0s - 1s
+predicted label: 0 0-45% 1-23% 2-16% 3-10% 4-6%
+real label: 2 2-100%
+
+testing sample: 1s - 2s
+predicted label: 0 0-87% 1-3% 2-6% 4-3%
+real label: 2 2-100%
+
+testing sample: 2s - 3s
+predicted label: 0 0-55% 1-16% 2-13% 3-10% 4-6%
+real label: 1 1-90% 2-10%
+
+testing sample: 3s - 4s
+predicted label: 0 0-77% 1-10% 2-10% 4-3%
+real label: 1 1-100%
+
+testing sample: 4s - 5s
+predicted label: 0 0-65% 1-13% 2-6% 3-10% 4-6%
+real label: 2 1-19% 2-81%subject S016
+
+testing sample: 0s - 1s
+predicted label: 0 0-94% 2-3% 3-3%
+real label: 0 0-100%
+
+testing sample: 1s - 2s
+predicted label: 0 0-68% 1-10% 2-13% 3-6% 4-3%
+real label: 0 0-100%
+
+testing sample: 2s - 3s
+predicted label: 0 0-87% 1-6% 2-3% 3-3%
+real label: 0 0-100%
+
+testing sample: 3s - 4s
+predicted label: 0 0-87% 1-3% 2-3% 3-3% 4-3%
+real label: 0 0-100%
+
+testing sample: 4s - 5s
+predicted label: 0 0-100%
+real label: 0 0-100%subject S017
+
+testing sample: 0s - 1s
+predicted label: 0 0-52% 3-23% 4-26%
+real label: 2 2-100%
+
+testing sample: 1s - 2s
+predicted label: 3 0-13% 1-3% 3-45% 4-39%
+real label: 2 2-100%
+
+testing sample: 2s - 3s
+predicted label: 0 0-45% 3-26% 4-29%
+real label: 1 1-90% 2-10%
+
+testing sample: 3s - 4s
+predicted label: 3 0-16% 1-3% 3-45% 4-35%
+real label: 1 1-100%
+
+testing sample: 4s - 5s
+predicted label: 0 0-45% 3-29% 4-26%
+real label: 2 1-19% 2-81%subject S017
+
+testing sample: 0s - 2s
+predicted label: 3 0-32% 1-2% 3-35% 4-32%
+real label: 2 2-100%
+
+testing sample: 2s - 4s
+predicted label: 3 0-32% 1-2% 3-33% 4-33%
+real label: 1 1-97% 2-3%
+
+testing sample: 4s - 6s
+predicted label: 3 0-30% 1-2% 3-37% 4-32%
+real label: 2 1-6% 2-94%subject S013
+
+testing sample: 0s - 2s
+predicted label: 1 0-8% 1-43% 2-19% 3-6% 4-24%
+real label: 1 1-100%
+
+testing sample: 2s - 4s
+predicted label: 1 0-8% 1-41% 2-19% 3-6% 4-25%
+real label: 2 1-3% 2-97%
+
+testing sample: 4s - 6s
+predicted label: 1 0-5% 1-43% 2-19% 3-6% 4-27%
+real label: 1 1-94% 2-6%subject S013
+
+testing sample: 0s - 2s
+predicted label: 1 0-8% 1-43% 2-19% 3-6% 4-24%
+real label: 1 1-100%
+
+testing sample: 2s - 4s
+predicted label: 1 0-8% 1-41% 2-19% 3-6% 4-25%
+real label: 2 1-3% 2-97%
+
+testing sample: 4s - 6s
+predicted label: 1 0-5% 1-43% 2-19% 3-6% 4-27%
+real label: 1 1-94% 2-6%
+
+testing sample: 6s - 8s
+predicted label: 1 0-8% 1-41% 2-19% 3-5% 4-27%
+real label: 2 1-10% 2-90%
+
+testing sample: 8s - 10s
+predicted label: 1 0-6% 1-43% 2-19% 3-6% 4-25%
+real label: 1 1-87% 2-13%
+
+testing sample: 10s - 12s
+predicted label: 1 0-8% 1-43% 2-19% 3-5% 4-25%
+real label: 2 1-16% 2-84%
+
+testing sample: 12s - 14s
+predicted label: 1 0-8% 1-41% 2-17% 3-6% 4-27%
+real label: 1 1-81% 2-19%
+
+testing sample: 14s - 16s
+predicted label: 1 0-8% 1-43% 2-17% 3-6% 4-25%
+real label: 2 1-22% 2-78%
+
+testing sample: 16s - 18s
+predicted label: 1 0-8% 1-41% 2-19% 3-5% 4-27%
+real label: 2 2-100%
+
+testing sample: 18s - 20s
+predicted label: 1 0-5% 1-43% 2-19% 3-6% 4-27%
+real label: 1 1-71% 2-29%
+
+testing sample: 20s - 22s
+predicted label: 1 0-8% 1-40% 2-19% 3-6% 4-27%
+real label: 2 1-32% 2-68%
+
+testing sample: 22s - 24s
+predicted label: 1 0-8% 1-40% 2-19% 3-6% 4-27%
+real label: 1 1-65% 2-35%
+
+testing sample: 24s - 26s
+predicted label: 1 0-8% 1-41% 2-17% 3-6% 4-27%
+real label: 1 1-100%
+
+testing sample: 26s - 28s
+predicted label: 1 0-8% 1-41% 2-17% 3-6% 4-27%
+real label: 2 1-41% 2-59%
+
+testing sample: 28s - 30s
+predicted label: 1 0-8% 1-43% 2-19% 3-5% 4-25%
+real label: 1 1-56% 2-44%
+
+testing sample: 30s - 32s
+predicted label: 4 0-19% 1-21% 2-13% 3-22% 4-25%
+real label: 4 1-48% 4-52%
+
+testing sample: 32s - 34s
+predicted label: 4 0-24% 1-5% 2-8% 3-29% 4-35%
+real label: 4 3-49% 4-51%
+
+testing sample: 34s - 36s
+predicted label: 4 0-24% 1-5% 2-8% 3-30% 4-33%
+real label: 3 3-100%
+
+testing sample: 36s - 38s
+predicted label: 4 0-24% 1-5% 2-10% 3-27% 4-35%
+real label: 3 3-57% 4-43%
+
+testing sample: 38s - 40s
+predicted label: 4 0-24% 1-5% 2-10% 3-30% 4-32%
+real label: 4 3-40% 4-60%
+
+testing sample: 40s - 42s
+predicted label: 4 0-24% 1-5% 2-8% 3-30% 4-33%
+real label: 3 3-63% 4-37%
+
+testing sample: 42s - 44s
+predicted label: 4 0-24% 1-3% 2-10% 3-29% 4-35%
+real label: 4 3-33% 4-67%
+
+testing sample: 44s - 46s
+predicted label: 4 0-22% 1-5% 2-10% 3-29% 4-35%
+real label: 3 3-70% 4-30%
+
+testing sample: 46s - 48s
+predicted label: 4 0-22% 1-5% 2-10% 3-30% 4-33%
+real label: 4 3-27% 4-73%
+
+testing sample: 48s - 50s
+predicted label: 4 0-24% 1-5% 2-10% 3-29% 4-33%
+real label: 3 3-76% 4-24%
+
+testing sample: 50s - 52s
+predicted label: 4 0-24% 1-5% 2-10% 3-30% 4-32%
+real label: 4 3-21% 4-79%
+
+testing sample: 52s - 54s
+predicted label: 4 0-24% 1-5% 2-8% 3-29% 4-35%
+real label: 3 3-83% 4-17%
+
+testing sample: 54s - 56s
+predicted label: 4 0-21% 1-5% 2-10% 3-30% 4-35%
+real label: 4 3-14% 4-86%
+
+testing sample: 56s - 58s
+predicted label: 4 0-24% 1-5% 2-10% 3-29% 4-33%
+real label: 3 3-89% 4-11%
+
+testing sample: 58s - 60s
+predicted label: 4 0-22% 1-5% 2-10% 3-29% 4-35%
+real label: 4 3-8% 4-92%subject S021
+
+testing sample: 0s - 2s
+predicted label: 0 0-86% 1-5% 2-2% 3-8%
+real label: 1 1-100%
+
+testing sample: 2s - 4s
+predicted label: 0 0-86% 1-5% 2-2% 3-8%
+real label: 2 1-3% 2-97%
+
+testing sample: 4s - 6s
+predicted label: 0 0-86% 1-5% 2-2% 3-8%
+real label: 2 2-100%
+
+testing sample: 6s - 8s
+predicted label: 0 0-86% 1-5% 2-2% 3-8%
+real label: 1 1-90% 2-10%
+
+testing sample: 8s - 10s
+predicted label: 0 0-86% 1-5% 2-2% 3-8%
+real label: 1 1-100%
+
+testing sample: 10s - 12s
+predicted label: 0 0-86% 1-5% 2-2% 3-8%
+real label: 2 1-16% 2-84%
+
+testing sample: 12s - 14s
+predicted label: 0 0-86% 1-5% 2-2% 3-8%
+real label: 1 1-81% 2-19%
+
+testing sample: 14s - 16s
+predicted label: 0 0-86% 1-5% 2-2% 3-8%
+real label: 2 1-22% 2-78%
+
+testing sample: 16s - 18s
+predicted label: 0 0-86% 1-5% 2-2% 3-8%
+real label: 1 1-75% 2-25%subject S051
+
+testing sample: 0s - 2s
+predicted label: 0 0-83% 1-2% 2-8% 3-2% 4-6%
+real label: 0 0-100%
+
+testing sample: 2s - 4s
+predicted label: 0 0-79% 1-11% 2-5% 4-5%
+real label: 0 0-100%
+
+testing sample: 4s - 6s
+predicted label: 0 0-78% 1-5% 2-5% 3-3% 4-10%
+real label: 0 0-100%
+
+testing sample: 6s - 8s
+predicted label: 0 0-75% 1-11% 3-5% 4-10%
+real label: 0 0-100%
+
+testing sample: 8s - 10s
+predicted label: 0 0-86% 3-3% 4-11%
+real label: 0 0-100%
+
+testing sample: 10s - 12s
+predicted label: 0 0-87% 2-5% 3-3% 4-5%
+real label: 0 0-100%
+
+testing sample: 12s - 14s
+predicted label: 0 0-92% 3-3% 4-5%
+real label: 0 0-100%
+
+testing sample: 14s - 16s
+predicted label: 0 0-92% 1-3% 3-2% 4-3%
+real label: 0 0-100%
+
+testing sample: 16s - 18s
+predicted label: 0 0-75% 1-11% 2-13% 4-2%
+real label: 0 0-100%
+
+testing sample: 18s - 20s
+predicted label: 0 0-83% 1-2% 2-6% 3-6% 4-3%
+real label: 0 0-100%
+
+testing sample: 20s - 22s
+predicted label: 0 0-87% 2-2% 3-5% 4-6%
+real label: 0 0-100%
+
+testing sample: 22s - 24s
+predicted label: 0 0-95% 1-2% 4-3%
+real label: 0 0-100%
+
+testing sample: 24s - 26s
+predicted label: 0 0-86% 1-3% 2-2% 3-5% 4-5%
+real label: 0 0-100%
+
+testing sample: 26s - 28s
+predicted label: 0 0-92% 3-6% 4-2%
+real label: 0 0-100%
+
+testing sample: 28s - 30s
+predicted label: 0 0-87% 1-3% 2-3% 4-6%
+real label: 0 0-100%
+
+testing sample: 30s - 32s
+predicted label: 0 0-78% 1-6% 2-8% 3-8%
+real label: 3 0-49% 3-51%
+
+testing sample: 32s - 34s
+predicted label: 0 0-49% 1-11% 2-6% 3-10% 4-24%
+real label: 3 3-52% 4-48%
+
+testing sample: 34s - 36s
+predicted label: 0 0-49% 1-14% 2-3% 3-10% 4-24%
+real label: 4 3-44% 4-56%
+
+testing sample: 36s - 38s
+predicted label: 0 0-49% 1-13% 2-6% 3-8% 4-24%
+real label: 3 3-59% 4-41%
+
+testing sample: 38s - 40s
+predicted label: 0 0-46% 1-14% 2-6% 3-10% 4-24%
+real label: 4 3-38% 4-62%
+
+testing sample: 40s - 42s
+predicted label: 0 0-49% 1-14% 2-6% 3-6% 4-24%
+real label: 3 3-65% 4-35%
+
+testing sample: 42s - 44s
+predicted label: 0 0-48% 1-14% 2-6% 3-8% 4-24%
+real label: 4 3-32% 4-68%
+
+testing sample: 44s - 46s
+predicted label: 0 0-46% 1-14% 2-6% 3-10% 4-24%
+real label: 3 3-71% 4-29%
+
+testing sample: 46s - 48s
+predicted label: 0 0-46% 1-14% 2-6% 3-10% 4-24%
+real label: 4 4-100%
+
+testing sample: 48s - 50s
+predicted label: 0 0-46% 1-14% 2-6% 3-10% 4-24%
+real label: 4 3-22% 4-78%
+
+testing sample: 50s - 52s
+predicted label: 0 0-46% 1-14% 2-6% 3-10% 4-24%
+real label: 3 3-81% 4-19%
+
+testing sample: 52s - 54s
+predicted label: 0 0-46% 1-14% 2-6% 3-10% 4-24%
+real label: 4 3-16% 4-84%
+
+testing sample: 54s - 56s
+predicted label: 0 0-46% 1-14% 2-6% 3-10% 4-24%
+real label: 3 3-100%
+
+testing sample: 56s - 58s
+predicted label: 0 0-48% 1-14% 2-6% 3-8% 4-24%
+real label: 3 3-90% 4-10%
+
+testing sample: 58s - 60s
+predicted label: 0 0-46% 1-14% 2-6% 3-10% 4-24%
+real label: 4 4-100%subject S013
+
+testing sample: 0s - 1s
+predicted label: 1 1-48% 2-19% 4-32%
+real label: 1 1-100%
+
+testing sample: 1s - 2s
+predicted label: 1 0-16% 1-39% 2-19% 3-13% 4-13%
+real label: 1 1-100%
+
+testing sample: 2s - 3s
+predicted label: 1 1-42% 2-19% 4-39%
+real label: 2 1-10% 2-90%
+
+testing sample: 3s - 4s
+predicted label: 1 0-10% 1-42% 2-19% 3-13% 4-16%
+real label: 2 2-100%
+
+testing sample: 4s - 5s
+predicted label: 1 0-6% 1-42% 2-16% 4-35%
+real label: 1 1-81% 2-19%
+
+testing sample: 5s - 6s
+predicted label: 1 0-6% 1-42% 2-23% 3-10% 4-19%
+real label: 1 1-100%
+
+testing sample: 6s - 7s
+predicted label: 1 0-10% 1-45% 2-16% 3-3% 4-26%
+real label: 2 1-29% 2-71%
+
+testing sample: 7s - 8s
+predicted label: 1 0-6% 1-42% 2-23% 3-6% 4-23%
+real label: 2 2-100%
+
+testing sample: 8s - 9s
+predicted label: 1 0-10% 1-35% 2-16% 3-6% 4-32%
+real label: 1 1-61% 2-39%
+
+testing sample: 9s - 10s
+predicted label: 1 0-6% 1-48% 2-19% 3-6% 4-19%
+real label: 1 1-100%
+
+testing sample: 10s - 11s
+predicted label: 4 0-10% 1-32% 2-16% 3-6% 4-35%
+real label: 2 1-48% 2-52%
+
+testing sample: 11s - 12s
+predicted label: 1 0-6% 1-52% 2-19% 3-3% 4-19%
+real label: 2 2-100%
+
+testing sample: 12s - 13s
+predicted label: 1 0-10% 1-32% 2-16% 3-10% 4-32%
+real label: 2 1-42% 2-58%
+
+testing sample: 13s - 14s
+predicted label: 1 1-52% 2-23% 3-3% 4-23%
+real label: 1 1-100%
+
+testing sample: 14s - 15s
+predicted label: 4 0-16% 1-26% 2-16% 3-10% 4-32%
+real label: 1 1-68% 2-32%
+
+testing sample: 15s - 16s
+predicted label: 1 1-52% 2-23% 3-3% 4-23%
+real label: 2 2-100%
+
+testing sample: 16s - 17s
+predicted label: 1 0-16% 1-32% 2-10% 3-10% 4-32%
+real label: 2 2-100%
+
+testing sample: 17s - 18s
+predicted label: 1 1-52% 2-23% 3-3% 4-23%
+real label: 2 2-100%
+
+testing sample: 18s - 19s
+predicted label: 1 0-16% 1-35% 2-13% 3-10% 4-26%
+real label: 2 1-13% 2-87%
+
+testing sample: 19s - 20s
+predicted label: 1 1-48% 2-26% 4-26%
+real label: 1 1-100%
+
+testing sample: 20s - 21s
+predicted label: 1 0-16% 1-35% 2-13% 3-13% 4-23%
+real label: 1 1-97% 2-3%
+
+testing sample: 21s - 22s
+predicted label: 1 1-48% 2-19% 4-32%
+real label: 2 2-100%
+
+testing sample: 22s - 23s
+predicted label: 1 0-16% 1-35% 2-19% 3-13% 4-16%
+real label: 2 2-100%
+
+testing sample: 23s - 24s
+predicted label: 1 1-45% 2-19% 4-35%
+real label: 1 1-94% 2-6%
+
+testing sample: 24s - 25s
+predicted label: 1 0-13% 1-39% 2-19% 3-13% 4-16%
+real label: 1 1-100%

@@ -1,0 +1,34 @@
+1. please finish function of prepare_data_forTesting() in  eeg_preprocessing.py
+	def prepare_data_forTesting(X, y, return_mesh=True):
+		    #Jim will finish it
+	    return X_preprocessed, y_oneHot
+
+2. please finish functions printPred() and loadData() in eeg_testSimulation64.py 
+	i.e., every 10 timepoint, we will predict a 64 channel EEG data and save the prediction result in a text file named brainCoder64.txt
+	
+	Suppose you will have a realtime eeg data allChannel, shape(allChannel)=[10,14], 14 means 14 channels, 10 means 10 time points (i.e., every 78.125 ms given sample rate=128HZ). So, when you write a test script, please use allChannel as input.  
+	The 14 channles are organized below
+        electrodes = ['AF3',
+                  'F7',
+                  'F3',
+                  'FC5',
+                  'T7', 
+                  'P7',
+                  'O1',
+                  'O2',
+                  'P8',
+                  'T8',
+                  'FC6',
+                  'F4',
+                  'F8',
+                  'AF4'] 
+
+3. please finish eeg_testLive16.py, which will adapt from the eeg_testSimulation64.py code to my wireless EEG equipment, i.e., from 64 channel to 14 channels (see the emotive_electrodes.png)
+	and use a real-time EEG data instead of loading the data from a .edf file
+ 
+
+note: in eeg_impport.py
+timeFromCue = 0.5 #exclude 0.5 seconds data right after cue
+
+ 
+see https://www.dropbox.com/home/EEG/code/python/cluster/test
