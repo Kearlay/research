@@ -11,8 +11,6 @@ the state-of-the-art deep learning application.
  The main project in progress. Our lab is planning finalize the paper soon and the source code will be updated after the paper is published.<br>
 ![Poster](https://github.com/Kearlay/research/blob/master/conference0928.png?raw=true)
 
-![Abstract](https://github.com/Kearlay/research/blob/master/OHBM.pdf?raw=true)
-
 ## (2) EEG Classification for Motor Imagery Tasks using CNN and LSTM
 Overview
 --------
